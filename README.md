@@ -1,6 +1,6 @@
 # Project-Management-App
 
-This is a website application which enable customers to post a software project to be done, the admin  then assign the tasks for project execution to the team leaders,
+This is a website application which enable customers to post a software project to be done, their is an admin  who  assign  tasks for project execution to the team leaders,
 create and manage the teams available to take up the project.The team leader  also has an account to manage the project
 ## Technologies Used
 #### Backend:
