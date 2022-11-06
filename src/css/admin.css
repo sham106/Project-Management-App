@@ -1,0 +1,12 @@
+.admin-project-table{
+    margin-top: 3rem;
+}
+
+th{
+    width: 100px;
+    margin-left: -3em;
+    font-size: 1rem;
+    color: white;
+    background-color: rgb(238, 18, 18);
+   
+  }

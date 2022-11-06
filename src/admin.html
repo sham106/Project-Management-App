@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin</title>
+    <link rel="stylesheet" href="css/style.css" >
+    <link rel="stylesheet" href="css/admin.css" >
+    <link rel="stylesheet" href="css/customer.css" >
+</head>
+<body>
+    <main>
+        <div class="big-wrapper">
+          <!-- header section -->
+           <header>
+            <div class="container">
+              <div class="logo">
+                <h3 href="#">Ea<span>sy</span></h3>
+              </div>
+              <div class="links">
+                <ul>
+                  <li id="assign-task"><a href="">Assign Task</a></li>
+                  <li><a href="Teams.html">Teams</a></li>
+                  <li><a href="#">Logout</a></li>
+                  <li><a href="#" ><img src="./images/adminicon.webp" alt="profile" class="admprofile-pic"/></a></li>
+                </ul>
+              </div>
+            </div>
+           </header>
+           <!-- <table border="3">
+            <thead>
+            <tr>Heading 1</tr>
+            <tr>Heading 2</tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td contenteditable='true'></td>
+            <td contenteditable='true'></td>
+            </tr>
+            <tr>
+            <td contenteditable='true'></td>
+            <td contenteditable='true'></td>
+            </tr>
+            </tbody>
+            </table> -->
+            <div class="admin-projects">
+              <h2>Recently added projects</h2>
+              <div class="head-project-section">
+            <!-- <div class="project-section">
+
+              <h3>Project name</h3>
+              <p>project description</p>
+
+            </div> -->
+              </div>
+            </div>
+            <div class="admin-project-table">
+              <table id="admin-table">
+               <tr>
+                 <th>Project name</th>
+                 <th>Teams</th>
+                 <th>Task</th>
+                 <th>Progress</th>
+                 <th>Start date</th>
+                 <th style="width: 10px;">Operations</th>
+               </tr>
+               <tbody id="admin-task-table"></tbody>
+                 <!-- <td>Alfreds Futterkiste</td>
+                 <td>Maria Anders</td>
+                 <td>Germany</td>
+                 <td>Germany</td>
+                 <td></td> -->
+                 <!-- <td class="delete-edit" style=" align-content: flex !important;">
+                  <img  src="./images/edit.png" width="2px" /> 
+                  <hr style="color:  rgb(245, 241, 241);">
+                  <img style="margin-top: 0.5rem; " src="./images/delete.png" /></td>
+                
+               </tr> -->
+               </div>
+
+               <!-- ................Add task section ................. -->
+               
+          </div>
+          <div id="add-task" style="align-items: center " class="add-task">
+            <h4 >Add Task</h4>
+            <div class="inner-add-task">
+              <label for="text">Project Name</label>
+              <input id="admin-project-name" type="text" placeholder="Enter project name">
+              </div>
+              <div class="inner-add-task">
+              <label for="text">Team</label>
+              <input id="team-name" type="text" placeholder="Enter team name">
+              </div>
+              <div class="inner-add-task">
+              <label for="text">Task</label>
+              <input id="task" type="text" placeholder="Enter  Task to be done">
+              </div>
+              <div class="inner-add-task">
+              <label for="text">start date</label>
+              <input id="startdate" type="datetime-local" placeholder="Enter date">
+              </div>
+              <div  class="inner-add-task">
+              <label  for="text">Progress</label>
+              <input id="progress" type="text" placeholder="Enter the project progress">
+            </div>
+            <div class="save-task">
+              <button id="save-task">save</button>
+            </div>
+
+           </div>
+           <script type="module" src="js/admin.js"></script>
+        </main>
+</body>
+</html>

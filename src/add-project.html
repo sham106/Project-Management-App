@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add new project</title>
+    <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+    <div class="add-project-form">
+        <form id="addProjectForm">
+            <h3>Start By Creating a  </h3>
+            <h3> project</h3>
+            <input id="project-name" type="text" name="new-project" placeholder="Project name">
+            <br>
+           
+            <input id="project-owner" type="text" name="owner" placeholder=" your name">
+            <br>
+            <input id="project-details" type="text" name="project_details" placeholder=" project description">
+            <div class="level-of-completion">
+            <fieldset>
+                <legend>Select a Level of completion</legend>
+            
+                <div>
+                  <input type="radio" id="huey" name="drone" value="huey"
+                         checked>
+                  <label for="huey">Started</label>
+                </div>
+            
+                <div>
+                  <input type="radio" id="dewey" name="drone" value="dewey">
+                  <label for="dewey">Half-way</label>
+                </div>
+                <div>
+                    <input type="radio" id="louie" name="drone" value="louie">
+                    <label for="louie">done</label>
+                  </div>
+              </fieldset>
+            </div>
+            
+        </form>
+        <button id="add-new-project" type="submit" class="add-project-btn">add project</button>
+
+    </div>
+
+   
+    <script type="module" src="js/addproject.js"></script>
+</body>
+</html>

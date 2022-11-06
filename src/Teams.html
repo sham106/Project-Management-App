@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teams</title>
+    <link rel="stylesheet" href="css/style.css" >
+</head>
+<body>
+    <main>
+        <div class="big-wrapper">
+          <!-- header section -->
+           <header>
+            <div class="container">
+              <div class="logo">
+                <h3 href="#">Ea<span>sy</span></h3>
+              </div>
+              <div class="links">
+                <ul>
+                  <li><a href="#">Teams</a></li>
+                  <li><a href="#">Tasks</a></li>
+                  <li><a href="#">Logout</a></li>
+                  <li><a href="#" ><img src="./images/adminicon.webp" alt="profile" class="admprofile-pic"/></a></li>
+                </ul>
+              </div>
+            </div>
+           </header>
+           <div id="add-team" class="add-teams">
+           <button class="add-team-btn">
+            <img src="./images/plus.png" alt="add-icon" />
+            <h3>New Team</h3>
+          </button>
+        </div>
+        <div class="teams-outer">
+           <div class="teams-box">
+            <h3>Team Name</h3>
+            <hr>
+            <h3>Members</h3>
+            <hr>
+            <h4>Firstname</h4>
+            <h4>Firstname</h4>
+            <h4>Firstname</h4>
+           </div>
+          </div>
+
+           <div style="float: right;" id="add-team-form" class="create-teams">
+            <form style="display: flex;">
+              <h4>Team Name</h4><input id="team-name" type="text" name="new-project" placeholder="Team name">
+             
+            </form>
+            <form style="display: flex;" class="form-teamLead">
+              <h4>Team leader</h4><input id="leader-name" type="text" name="new-project" placeholder="Full name">
+              <input id="leader-email" type="email" name="new-project" placeholder=" email">
+            </form>
+            <form style="display: flex; left: 2rem;">
+              <h4>Member1</h4><input id="member1" type="text" name="new-project" placeholder="full name">
+              <input id="member1-email" type="email" name="new-project" placeholder="email">
+            </form>
+            <form style="display: flex;">
+              <h4>Member2</h4><input id="member2" type="text" name="new-project" placeholder="full name">
+              <input id="member2-email" type="email" name="new-project" placeholder="email">
+            </form>
+            <form style="display: flex;">
+              <h4>Member3</h4><input id="member3" type="text" name="new-project" placeholder="full name">
+              <input id="member3-email" type="email" name="new-project" placeholder="email">
+            </form>
+            <form style="display: flex;">
+              <h4>Member4</h4><input id="member4" type="text" name="new-project" placeholder="full name">
+              <input id="member4-email" type="email" name="new-project" placeholder="email">
+            </form>
+            <form style="display: flex;">
+              <h4>Member5</h4><input id="member5" type="text" name="new-project" placeholder="full name">
+              <input id="member5-email" type="email" name="new-project" placeholder="email">
+            </form>
+            <button id="creat-team-btn" class="creat-team-btn">Creat Team</button>
+            </div>
+           </div>
+        </main>
+        <script type="module" src="js/teams.js"></script>
+</body>
+</html>

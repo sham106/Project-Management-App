@@ -1,0 +1,121 @@
+.projects{
+    display: flex;
+    padding-top: 0;
+    margin-top: 30em;
+    float: right;
+    margin-bottom: 0;
+    font-size: small;
+  
+  }
+  .add-project{
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: rgb(66, 226, 34);
+    border: none;
+    margin-top: 0;
+    float: right;
+    margin-bottom:5em;
+    margin-right: 2em;
+    color: white;
+    font-size: smaller;
+  }
+  .add-project img{
+    width: 2em;
+    color: white;
+  }
+  
+    .myproject{
+      margin-top: 1em;
+      margin-left: 2em;
+    }
+    .add-project:hover{
+      background-color: rgb(235, 124, 124);
+      cursor: pointer;
+    }
+  .project-table table{
+    /* width: 100%; */
+   
+    margin-top: 3em;
+    border: none;
+    border-radius: 20px;
+    
+  }
+  td{
+   
+    padding: 2em;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    align-items: center;
+    background-color: rgb(255, 233, 200);
+    border: 1px ;
+    width: 400px;
+    height: 3rem !important;
+    
+   
+  }
+  table {
+    height: 3rem;
+  }
+  tr{
+    height: 3rem;
+  }
+  th{
+    width: 100px;
+    margin-left: -3em;
+    font-size: 1rem;
+    color: white;
+    background-color: rgb(238, 18, 18);
+   
+  }
+   tr:nth-child(even) td{
+    background-color: #f7a2a2;
+  }
+  tr:nth-child(odd) td{
+    background-color: #c97e7e;
+  }
+
+  tr:hover td {
+    color: #462899;
+    cursor: pointer;
+    background-color: #ffffff;
+  }
+  
+  table th, table td{
+    text-align: center;
+   
+    }
+
+  /* table,th,td{
+    border: 1px solid rgb(201, 194, 194);
+  } */
+  tr{
+    border-bottom: 3px solid rgb(8, 8, 8);
+  }
+
+  .delete {
+    width: 20px;
+  }
+  .delete:hover{
+    transform: scale(1.25);
+  }
+  .edit{
+    width: 20px;
+   
+  }
+  .edit:hover{
+    transform: scale(1.25);
+  }
+
+  .operations-center{
+    display: flex;
+    margin-right: none !important;
+    position: absolute;
+    right: 1rem;
+    align-items: center;
+    align-self: center;
+  }
+
+  .save:hover{
+    cursor: pointer;
+  }

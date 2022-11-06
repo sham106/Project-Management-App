@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project management</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/customer.css">
+</head>
+
+<body>
+
+  <main>
+    <div class="big">
+      <!-- header section -->
+      <header>
+        <div class="container">
+          <div class="logo">
+            <h3 href="#">Ea<span>sy</span></h3>
+          </div>
+          <div class="links">
+            <ul>
+              <li><a href="#"></a></li>
+              <li><a href="#"></a></li>
+              <li><a href="#" id="logout">Log out</a></li>
+              <li><a href="#"><img src="./images/profileicon.png" alt="profile" class="profile-pic" /></a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="Projects">
+        <h3 class="myproject">My Projects</h3>
+        <button id="add-project-id" class="add-project">
+          <img src="./images/plus.png" alt="add-icon" />
+          <h3>Add project</h3>
+        </button>
+
+      </div>
+      <div id="add-project-form" class="add-project-form" style="display:none">
+        <form id="addProjectForm">
+          <h3>Start By Creating a </h3>
+          <h3> project</h3>
+          <input id="project-name" type="text" name="new-project" placeholder="Project name">
+          <br>
+  
+          <input id="project-owner" type="text" name="owner" placeholder=" your name">
+          <br>
+          <input id="project-details" type="text" name="project_details" placeholder=" project description">
+          <br>
+          <input id="project-workings" type="text" name="project_details" placeholder="what is being done now">
+
+          <div class="level-of-completion">
+            <fieldset>
+              <legend>Select a Level of completion</legend>
+  
+              <div>
+                <input type="radio" id="huey" name="drone" value="huey" checked>
+                <label for="huey">Started</label>
+              </div>
+  
+              <div>
+                <input type="radio" id="dewey" name="drone" value="dewey">
+                <label for="dewey">Half-way</label>
+              </div>
+              <div>
+                <input type="radio" id="louie" name="drone" value="louie">
+                <label for="louie">done</label>
+              </div>
+            </fieldset>
+          </div>
+          <button  id="add-new-project" type="submit" class="add-project-btn">add project</button>
+        </form>
+  
+      </div>
+      
+      
+      <div style="border-radius: 2rem;" class="project-table">
+        <table  id="customer-table" cellspacing="0" style="padding:10px" style="border-radius: 20px;">
+          <thead style="width: 100%;">
+          <th >Project Name</th>
+          <th >Owner</th>
+          <th >Description</th>
+          <th >What is being worked on now</th>
+          <th >status</th>
+          <th >Operations</th>
+          </thead>
+          <tbody id="customer-project-table"></tbody>
+          
+      </div>
+      
+    </div>
+    
+  </main>
+  <!-- <script type="module">
+    import { initializeApp } from "firebase/app";
+    import { getDatabase, set, ref, update } from "firebase/database";
+    import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "firebase/auth";
+    import { getRedirectResult, GoogleAuthProvider, signInWithRedirect, signInWithPopup, FacebookAuthProvider } from "firebase/auth";
+
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyC2Gvq3BGer8d5TgOBiVfVO2hpVX7st96Y",
+      authDomain: "project-management-web.firebaseapp.com",
+      databaseURL: "https://project-management-web-default-rtdb.firebaseio.com",
+      projectId: "project-management-web",
+      storageBucket: "project-management-web.appspot.com",
+      messagingSenderId: "951092608945",
+      appId: "1:951092608945:web:b6bdc970108a843a8c4790",
+      measurementId: "G-J8V1K8MJJE"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const database = getDatabase(app);
+    const auth = getAuth(app);
+
+    logout.addEventListener('clicl', (e) => {
+      signOut(auth).then(() => {
+        // Sign-out successful.
+        window.location.href = 'login.html'
+      }).catch((error) => {
+        // An error happened.
+      });
+
+    })
+
+    //................. Adding new project.............//
+    const row = 1;
+    const display = document.getElementById('customer-project');
+
+    const newRow = customer-project.insertRow(row);
+    const cell1 = newRow.insertcell(0);
+    const cell2 = newRow.insertcell(1);
+    const cell3 = newRow.insertcell(2);
+    const cell4 = newRow.insertcell(3); -->
+
+
+
+  
+  <script type="module" src="js/customer.js"></script>
+</body>
+
+</html>

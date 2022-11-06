@@ -1,0 +1,651 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,300&display=swap');
+
+:root{
+  --mainColor: blue;
+  --hoverColor:  rgb(202, 140, 140);
+  --backgroundColor:  rgb(235, 200, 195);
+  --darkOne: #312f3a;
+  --darkTwo: #45424b;
+  --lightTwo:#aaa;
+
+}
+
+/* universal selector */ *, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    font-family: 'poppins',sans-serif;
+}
+img{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+header{
+  position: sticky;
+}
+span{
+    color: red;
+}
+
+.big-wrapper{
+    padding: 1.7rem 0 2rem;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: var(--backgroundColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}b
+.container{
+    position: relative;
+    max-width: 81rem;
+    width: 100%;
+    /* background-color: rgb(214, 172, 172); */
+    margin: 0 auto;
+    z-index: 10;
+    position: sticky;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(226, 186, 192);
+    ;
+}
+.logo h3{
+    font-size: 1.55rem;
+}
+.links ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.links a{
+    color: black;
+    margin-left: 4.5rem;
+    display: inline-block;
+}
+.links a:hover{
+    color: var(--hoverColor);
+    transform: scale(1.25);
+
+}
+.link img{
+  color: black;
+  padding: 2rem;
+
+}
+.profile-pic{
+  width: 1.5em;
+  margin: 2px;
+ background-color: black;
+ color: black;
+ align-items: center;
+ margin-top: 0.5em;
+ margin-right: 0.5em;
+ 
+ 
+}
+.btn{
+    display: inline-block;
+    padding: .5rem 1.2rem;
+    color: white !important;
+    background-color: red;
+    border-radius: 16px;
+    text-transform: capitalize;
+    transition: 0.3s;
+}
+.btn:hover{
+    background-color: var(--hoverColor);
+    transform: scale(1) !important;
+}
+.showcase-area .container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+}
+.big-title{
+    
+    color: black;
+    /* text-transform: capitalize; */
+    line-height: 1.4;
+}
+.text{
+    color: rgb(116, 112, 112);
+    font-size: 1.1rem;
+    margin: 1.0rem 0 2.5rem;
+    line-height: 2.3;
+    max-width: 600px;
+}
+.management{
+    width: 123%;
+    transform: translate(0%, 25px);   
+}
+
+
+
+/* login page */
+.social {
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+   padding: 4px;
+    margin-bottom: 20px;
+    width: 220px;
+    height: 36px;
+    font-size: 15px;
+    background-color:  lightgrey;
+    border-color: none;
+    outline: none;
+    border: none;
+
+  }
+  .social:hover{
+    background-color: var(--backgroundColor);
+  }
+  
+  .social img {
+    width: 25px;
+    margin-right: 0.85rem;
+    margin-top: -0.6rem;
+    /* line-height: 2.3; */
+    padding-top: .8rem;
+    padding-left: 0;
+    border: none;
+    
+    
+    
+  }
+  
+  .logo-login h4 {
+    color: rgb(47, 47, 121);
+    font-size: .9rem;
+    line-height: 3.5;
+    font-weight: 700;
+    text-align: center;
+  }
+  .login-outer{
+    justify-content: center;
+    text-align: center;
+    
+    padding:0;
+    line-height: 2;
+    max-width: 600px;
+    padding-left: 300px;
+    
+  }
+  .login-inner{
+    top: 0;
+    bottom: 0;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    background-color: white;
+    background-position: center;
+    height: max-content;
+    /* width:300px; */
+   
+  }
+  .input{
+   box-sizing: border-box;
+   width: 220px;
+   height: 32px;
+   outline: none;
+   background-color: rgb(243, 224, 224);
+   border: none;
+   padding-left: 2px;
+   margin-bottom: 1rem;
+  }
+  .logo{
+    font-size: larger;
+  }
+  h3{
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .login-cta .login-btn {
+    padding: 2px;
+    background-color: rgb(245, 13, 13);
+    color: white;
+    border-radius: 0.5rem;
+    height: 2rem;
+    width: 80%;
+    text-decoration: none;
+    border: none;
+    display: inline-block;
+    font-size: 1.1rem;
+
+  
+  }
+  .login-cta{
+    padding: 6px;
+    
+  }
+  .social-box{
+    text-align: center;
+    padding-left: 2rem;
+  }
+  
+  section .login-page{
+    text-align: center;
+    justify-content: center !important;
+  }
+  .login-btn:hover{
+    background-color: var(--backgroundColor);
+  }
+  a{
+    transition: 0.3s;
+    
+  }
+  a :hover{
+    color: aqua;
+  }
+  
+  /* registration section */ 
+  .logo-registration{
+    justify-content: center;
+    text-align: center;
+  }
+  .registration-form{
+    justify-content: center;
+    text-align: center;
+    padding-top: 2em;
+    padding: 4em;
+    width: 600px;
+    padding-left: 300px;
+    
+  }
+  .registration-box{
+    padding-top: 3em;
+    box-sizing: border-box;
+    padding: 40px;
+    width: 300px;
+    height: 400px;
+    background-color: rgb(207, 176, 176);
+    
+  }
+  .logo-registration{
+    padding-left: 30px;
+    padding-bottom: 4px;
+    font-size: xx-large;
+  }
+  h1{
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: white;
+  }
+  .input-box{
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 4px;
+    width: 220px;
+    height: 32px;
+    border: 1px solid #fff;
+    outline: none;
+    font-size: 15px;
+    transition: 0.2s;
+    color: #fff;
+    background: transparent;
+  }
+  .register-btn{
+    margin-bottom: 28px;
+    width: 120px;
+    height: 32px;
+    background: red;
+    border: none;
+    border-radius: 2px;
+    color: white;
+    text-transform: uppercase;
+    cursor:pointer;
+    transition:0.2s;
+  }
+  .register-btn:hover{
+    background-color: rgb(230, 146, 146);
+  }
+
+  /* ...... customer page .......*/
+ 
+  /* ........Admin Page........ */
+  .admprofile-pic{
+    width: 1.7em;
+    margin-top: 3px;
+  }
+  .project-section{
+    background-color: white;
+    position: relative;
+    margin: 0;
+    border: 0;
+    margin-top: 0;
+    margin-bottom: 25rem;
+    width: 200px;
+    height: 200px;
+    margin-top: 2rem;
+    margin-left: 6rem;
+    border-radius: 0.6rem;
+    border-color: black;
+    justify-content: center;
+    align-items: center;
+    border-width: 2rem;
+    border-color: red;
+  }
+  .project-section h3{
+    padding: 2rem;
+    color: rgb(5, 5, 134);
+
+  }
+  .project-section p{
+    padding: 1rem;
+    color: rgb(75, 68, 68);
+  }
+  .admin-projects{
+    margin-bottom: 15rem;
+    padding: 3rem;
+    color: white;
+    background-color: lightseagreen;
+    height: 18rem;
+    
+  }
+  .admin-project-table{
+    margin-bottom: 15rem;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index:999;
+    position: relative; 
+  top: -250px;
+  }
+.delete-edit{
+  align-items: flex !important;
+  background-color: rgb(245, 241, 241);
+  padding: 0 !important;
+  width: fit-content;
+  
+}
+.delete-edit img{
+  margin-top: 0;
+  
+  align-items: flex !important; 
+  width: 3rem;
+  font-size: small;
+  width: 20px !important;
+  height: 20px !important;
+}
+
+.delete-edit img:hover{
+  cursor: pointer;
+  transform: scale(1.5);
+  background-color: rgb(152, 224, 221);
+}
+
+.add-task{
+  background-color: rgb(255, 255, 255);
+  position:absolute;
+  top: -15rem;
+  left: 50%;
+  padding: 2rem 1rem;
+  box-shadow: ( red);
+  border-radius: 10px;
+  width: 350x;
+  display: none;
+}
+.inner-add-task{
+  padding: 0.5rem;
+}
+
+.add-task h4{
+  position: absolute;
+  color: rgb(0, 0, 0);
+  left: 40%;
+  top: -2px;
+  font-size: larger;
+ 
+}
+.save-task button{
+  
+  background-color: #ec0f0f;
+  color: white;
+  border: none;
+  position: absolute;
+  font-size: 1.rem;
+  padding: 0.4rem;
+  border-radius: 10px;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  cursor: pointer;
+  
+  
+}
+.save-task button:hover{
+  background-color: rgb(236, 101, 101);
+}
+
+.inner-add-task input{
+  font-size: 1.15rem;
+  display: block;
+  outline: none;
+  border: 1px solid rgb(102, 96, 96);
+  margin-top: 5px;
+  padding: 0.3rem;
+  border-radius: 4px;
+}
+.inner-add-task label{
+  color: #0f033b;
+}
+  /* >>>>>>>>>>>Teams page >>>>>>>>>> */
+
+  .add-team-btn{
+    background-color: red;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    color: white;
+    border: none;
+    
+  }
+  .add-team-btn:hover{
+    background-color: lightcoral;
+    cursor: pointer;
+  }
+  .add-team-btn img{
+    width: 2em;
+    color: white;
+  }
+  .teams-box{
+    /* z-index:999; */
+    position: relative; 
+    top: -100px;
+    width: 200px;
+    height: 300px;
+    background-color: white;
+    margin-left: 2rem;
+    border-radius: 0.5rem;
+  }
+  .teams-box h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(235, 33, 18);
+    padding-left: 2rem;
+  }
+  .teams-box h4{
+    font-size: small;
+    padding-left: 1rem;
+    padding: 0.2rem;
+    color: rgb(114, 110, 110);
+    
+  }
+  .add-teams{
+    position: relative;
+    left: 3rem;
+    margin-top: -4rem;
+    top: -15px;
+    
+  }
+  .create-teams {
+    position:absolute;
+   margin: 0;
+   right: 50px;
+   top: 7rem;
+   width: 50%;
+   height: 80%;
+   padding: 1.5rem;
+   
+   
+    /* position: relative; */
+    /* float: right; */
+   border-color: black;
+   border-width: 2rem;
+   background-color: rgb(61, 178, 199);
+   display: none;
+  }
+  .left-form {
+   display: flex;
+   
+  }
+.create-teams input{
+  
+  font-size: 1rem;
+  padding: 0.5rem;
+ 
+ 
+}
+
+.create-teams h4{
+  color: rgb(7, 7, 7);
+  font-style:inherit;
+
+}
+.create-teams .creat-team-btn{
+  position:absolute;
+  margin-top:  3rem;
+  margin: auto;
+  background-color: rgb(223, 19, 19);
+  padding: 0.5rem;
+  font-size: larger;
+  border-radius: 10px;
+  color: white;
+  width: -2rem;
+
+}
+
+.creat-team-btn:hover{
+  color: lightcoral;
+  cursor: pointer;
+}
+  /* ********************Team Lead section**************** */
+  .teamlead{
+    margin-top: 0;
+    margin-bottom: 30em;
+    background-color: white;
+    display: flex;
+    
+  }
+  .leader-section{
+    
+   background-color: rgb(228, 169, 169); 
+    justify-content:center ;
+    align-items: center;
+    margin: 2rem;
+    width: 50%;
+  }
+
+  table{
+   width: 100%;
+  }
+  .teamlead th{
+    background-color: rgb(247, 239, 239);
+  }
+  .teamlead td{
+    background-color: white;
+  }
+  .teamlead h5 {
+    margin: 1rem;
+    color: #64616b;
+  }
+  .teamlead h4{
+    padding: 1rem;
+  }
+ 
+  /*>>>>>>>>>>>>>>>>>> Add-project page >>>>>>>>>>>>>>>>>>>*/
+  .add-project-form{
+    
+    padding-top: 10rem;
+    outline: none;
+    padding-left: 2rem;
+    background-color: lightcyan;
+    
+    
+  }
+  .add-project-form input{
+    align-items: baseline;
+    border: 0;
+    outline: none;
+    width: 50%;
+    height: 5rem;
+   
+  }
+  .add-project-form form h3{
+    padding: 0.5rem;
+    font-size: 3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2e2d33;
+    font-weight: lighter;
+
+  }
+  .add-project-form input[type=text] {
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid #2f0cad;
+}
+.add-project-form input[placeholder]{
+  font-size: 2rem;
+}
+.add-project-btn{
+  margin-top: 2rem;
+  padding: 15px 32px;
+  align-items: center;
+  background-color: blue;
+  color: white;
+  font-size: larger;
+  border: 0;
+  border-radius: 0.5rem;
+}
+.add-project-btn:hover{
+  background-color: lightcoral;
+}
+
+/************************ options ********************/
+fieldset{
+  background-color: rgb(242, 242, 243);
+  width: 20rem;
+  border-color: white;
+  
+}
+
+input[type=radio] {
+  border: 0px;
+ 
+  height: 2em;
+  margin-top: 1rem;
+}
+.level-of-completion label{
+  color: black;
+  position: absolute;
+  margin-left: -3rem;
+  margin-top: 1.1rem;
+  vertical-align: middle;
+}
+p label {
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input {
+    margin: .4rem;
+}

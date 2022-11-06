@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #E1D8D8;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="login-page">
+    <div class="login-outer">
+      <div class="logo">
+        <h3 href="#">Ea<span>sy</span></h3>
+      </div>
+      <div class="login-inner">
+        <p class="login-text">Login to Easy</p>
+        <form action="#">
+          <label for="lang">Continue as </label>
+          <select name="privilage" id="Position">
+            <option id="admin-position" value="Admin.html">Admin</option>
+            <option id="team-lead-position" value="teamLead.html">Team Lead</option>
+            <option id="customer-position" value="customer.html">Customer</option>
+          </select>
+        </form>
+        <input type="email" class="input box" id="email" placeholder="Enter email">
+        <input type="password" class="input box" id="password" placeholder="Enter password">
+        <div class="login-cta">
+          <button class="login-btn" id="btnlogin">Log in</button>
+        </div>
+        <h3>OR</h3>
+        <div class="social-box">
+          <button class="social Google" id="googleLogin">
+            <img src="./images/Google_Icons.webp" alt="Logo" />
+            <h4>continue with Google</h4>
+          </button>
+          <button id="facebookLogin" class="social fb">
+            <img src="./images/Facebook_icon.png" alt="Logo" />
+            <h4>continue with facebook</h4>
+          </button>
+          <button class="social twitter">
+            <img src="./images/Twitter-logo.png" alt="Logo" />
+            <h4>continue with twitter</h4>
+          </button>
+          <button class="social github" id="githubLogin">
+            <img src="./images/github-icon.png" alt="Logo" />
+            <h4>continue with github</h4>
+          </button>
+        </div>
+        <p>Don't have an account? <a href="registration.html">Sign up</a></p>
+      </div>
+    </div>
+  </section>
+  
+  
+ 
+
+  <script type="module" src="js/login.js"></script>
+</body>
+
+</html>
